@@ -1,0 +1,12 @@
+// Exercise 19.2: Customize primary colors and border radius via _variables.scss
+
+// Override primary color to a custom purple
+$primary: #6f42c1;
+
+// Override border radius globally
+$border-radius: 0.5rem;
+$border-radius-lg: 1rem;
+$border-radius-sm: 0.25rem;
+
+// Enable gradients (Exercise 13.2 uses bg-gradient)
+$enable-gradients: true;

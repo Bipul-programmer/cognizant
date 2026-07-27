@@ -1,0 +1,15 @@
+// Exercise 19.1: Set up a Bootstrap 5 project with Sass using npm.
+
+// Import custom overrides first
+@import "variables";
+
+// Import Bootstrap Icons (ensure we have it available in CSS)
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+// Import core Bootstrap SCSS
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Custom styles for specific exercises if needed
+.sidebar-demo {
+    min-height: 200px;
+}
