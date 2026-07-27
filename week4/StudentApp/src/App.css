@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #090d16;
+  color: #f1f5f9;
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  background: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #090d16 65%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portal-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.portal-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.35rem 1rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+}
+
+.portal-header h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.portal-subheading {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.components-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.75rem;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.component-card {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.component-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+.home-card::before {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
+
+.about-card::before {
+  background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+}
+
+.contact-card::before {
+  background: linear-gradient(90deg, #ec4899, #f472b6);
+}
+
+.component-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+.component-card h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.home-card h2 { color: #60a5fa; }
+.about-card h2 { color: #c084fc; }
+.contact-card h2 { color: #f472b6; }
+
+.component-card p {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
